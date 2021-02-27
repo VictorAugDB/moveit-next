@@ -1,0 +1,59 @@
+.signInContainer {
+  display: flex;
+}
+
+.signInContainer div.logoWhite  {
+  display: flex;
+  margin: 18.5rem 0 0 20rem;
+}
+
+.signInContainer {
+  display: inline-block;
+}
+
+.signInContainer div.logoWhite img {
+  width: 22.5rem;
+  height: 4.75rem;
+}
+
+.signInContainer > div {
+  margin: 7.5rem 0 0 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.signInContainer > div p {
+  color: #B2B9FF;
+  font-size: 1.25rem;
+}
+
+.signInContainer > div h1{
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+
+.signInContainer > div div {
+  margin-top: 2rem;
+}
+
+.signInContainer > div div.githubLogin {
+  max-width: 19.875rem;
+}
+
+.signInContainer > div div.githubLogin p {
+  text-align: justify;
+}
+
+.signInContainer > div div:last-child{
+  background-image: linear-gradient(to right, #4953B8, #545db9);
+  padding: 1.5rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.signInContainer > div div:last-child input{
+  background: transparent;
+  border: 0;
+  outline: none;
+}
