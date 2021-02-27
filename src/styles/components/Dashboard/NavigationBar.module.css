@@ -28,6 +28,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  transition: background 0.2s, border 0.2s;
 }
 
 .navigationBarContainer > div > section:first-child{
@@ -36,4 +38,16 @@
 
 .navigationBarContainer > div > section:hover{
   border-left: 3px solid #5965E0;
+}
+
+.navigationBarContainer > div section:hover img.actionHome {
+  background: url("/icons/home-purple.svg");
+}
+
+.navigationBarContainer > div section:hover img.actionHome {
+  background: url("/icons/home-purple.svg");
+}
+
+.navigationBarContainer > div section:hover img.actionAward {
+  background: url("/icons/award-purple.svg");
 }

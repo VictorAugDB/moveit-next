@@ -6,10 +6,10 @@ export function NavigationBar() {
       <img src="/logo-full-blue.svg" alt="favicon-blue" />
       <div>
         <section>
-          <img className="actions" src="/icons/home.svg" alt="home" />
+          <img className={styles.actionHome} src="/icons/home.svg" alt="home" />
         </section>
         <section>
-          <img className="actions" src="/icons/award.svg" alt="award" />
+          <img className={styles.actionAward} src="/icons/award.svg" alt="award" />
         </section>
       </div>
     </div>
