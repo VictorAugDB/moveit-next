@@ -1,5 +1,6 @@
 .signInContainer {
   display: flex;
+  background: var(--blue);
 }
 
 .signInContainer div.logoWhite  {
@@ -39,7 +40,23 @@
 }
 
 .signInContainer > div div.githubLogin {
+  display: flex;
   max-width: 19.875rem;
+  padding: 0.25rem;
+
+  transition: background-color 0.2s;
+}
+
+.signInContainer > div div.githubLogin:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.signInContainer > div div.githubLogin img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
 }
 
 .signInContainer > div div.githubLogin p {
@@ -47,13 +64,41 @@
 }
 
 .signInContainer > div div:last-child{
+  height: 4.2rem;
+  display:flex;
   background-image: linear-gradient(to right, #4953B8, #545db9);
-  padding: 1.5rem 1.5rem;
   border-radius: 0.25rem;
+  position: relative;
 }
 
 .signInContainer > div div:last-child input{
+  flex: 1;
   background: transparent;
+  margin-left: 1rem;
   border: 0;
   outline: none;
+  color: #fff;
+}
+
+.signInContainer > div div:last-child input::placeholder{
+  color: #B2B9FF;
+}
+
+.signInContainer > div div:last-child button{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 2.10rem 2.10rem;
+  margin: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  background: url('/icons/vector.png') no-repeat center;
+  background-color: #4953B8;
+
+  transition: background-color 0.2s;
+}
+
+.signInContainer > div div:last-child button:hover{
+  background-color: #4CD62B;
 }

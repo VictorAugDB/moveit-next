@@ -8,6 +8,6 @@
 
 .container img {
   margin: auto 0;
-  width: 48rem;
-  height: 41.25rem;
+  max-width: 48rem;
+  max-height: 41.25rem;
 }
