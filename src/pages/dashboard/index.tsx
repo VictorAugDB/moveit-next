@@ -6,6 +6,7 @@ import { CompletedChallenges } from '../../components/Dashboard/CompletedChallen
 import { Countdown } from '../../components/Dashboard/Countdown';
 import { ExperienceBar } from '../../components/Dashboard/ExperienceBar';
 import { ChallengeBox } from '../../components/Dashboard/ChallengeBox';
+import { NavigationBar } from '../../components/Dashboard/NavigationBar';
 
 import styles from '../../styles/pages/Dashboard.module.css';
 import { CountdownProvider } from '../../contexts/CountdownContext';
@@ -22,7 +23,10 @@ export default function Home(props: HomeProps) {
     <ChallengesProvider
       level={props.level}
       currentExperience={props.currentExperience} challengesCompleted={props.challengesCompleted}>
+      <NavigationBar />
+      
       <div className={styles.container}>
+
         <Head>
           <title>Inicio | move.it</title>
         </Head>

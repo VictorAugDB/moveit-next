@@ -1,0 +1,39 @@
+.navigationBarContainer {
+  width: 7rem;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  z-index: 9;
+
+  display: flex;
+  justify-content: center;
+
+  left: 0;
+}
+
+.navigationBarContainer > img{
+  margin: 1.75rem 0 0 0;
+  position: absolute;
+}
+
+.navigationBarContainer > div{
+  margin: auto 0;
+  width: 100%;
+}
+
+.navigationBarContainer > div > section{
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigationBarContainer > div > section:first-child{
+  margin-bottom: 1.5rem;
+}
+
+.navigationBarContainer > div > section:hover{
+  border-left: 3px solid #5965E0;
+}
