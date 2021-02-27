@@ -38,6 +38,7 @@
 
 .navigationBarContainer > div > section:hover{
   border-left: 3px solid #5965E0;
+  cursor: pointer;
 }
 
 .navigationBarContainer > div section:hover img.actionHome {
