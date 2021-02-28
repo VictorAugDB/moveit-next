@@ -25,14 +25,14 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
   const { startNewChallenge } = useContext(ChallengesContext);
 
 
-  const [time, setTime] = useState(0.05  * 60);
+  const [time, setTime] = useState(25  * 60);
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
 
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
-  const elapsedPercent = Math.floor(((elapsedTime / 60) / 0.05) * 100 );
+  const elapsedPercent = Math.floor(((elapsedTime / 60) / 25) * 100 );
 
   function startCountdown() {
     setIsActive(true);
@@ -41,7 +41,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
   function resetCountdown() {
     clearTimeout(countdownTimeout)
     setIsActive(false);
-    setTime(0.05 * 60);
+    setTime(25 * 60);
     setElapsedTime(0)
     setHasFinished(false);
   }
