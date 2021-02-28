@@ -1,8 +1,11 @@
+import { NavigationBarProvider } from '../contexts/NavigationBarContext'
 import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-        <Component {...pageProps} />
+    <NavigationBarProvider>
+      <Component {...pageProps} />
+    </NavigationBarProvider>
   )
 }
 

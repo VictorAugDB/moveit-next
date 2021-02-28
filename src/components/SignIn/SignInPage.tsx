@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../../styles/components/SignIn/SignIn.module.css'
 
 export function SignInPage() {
@@ -11,12 +12,14 @@ export function SignInPage() {
         <div>
           <h1>Bem-vindo</h1>
           <div className={styles.githubLogin}>
-            <img src="/icons/github.svg" alt="github_icon"/>
+            <img src="/icons/github.svg" alt="github_icon" />
             <p>Faça login com seu github para começar</p>
           </div>
           <div>
-            <input type="text" placeholder="Digite seu username"/>
-            <button></button>
+            <input type="text" placeholder="Digite seu username" />
+            <Link href="/dashboard">
+              <button></button>
+            </Link>
           </div>
         </div>
       </div>

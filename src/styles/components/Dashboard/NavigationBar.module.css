@@ -1,13 +1,14 @@
 .navigationBarContainer {
   width: 7rem;
   height: 100vh;
-  background: #fff;
+  background-image: linear-gradient(to bottom, #fff, rgba(102, 102, 102, 0.1));
   position: fixed;
   z-index: 9;
 
   display: flex;
   justify-content: center;
 
+  top: 0;
   left: 0;
 }
 

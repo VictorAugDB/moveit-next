@@ -1,0 +1,97 @@
+.leaderUsersContainer {
+  display: flex;
+  min-width: 55%;
+  margin-left: 5%;
+  height: 6rem;
+  margin-top: 1rem;
+
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  border-radius: 0.35rem;
+}
+
+.leaderUsersContainer section{
+  display: flex;
+  align-items: center;
+}
+
+.leaderUsersContainer section:first-child::before{
+  content: '';
+  height: 6rem;
+  position: absolute;
+
+  border-left: 3px solid #d7dbda;
+  left: 65px;
+}
+
+.leaderUsersContainer section span{
+  display: flex;
+}
+
+.leaderUsersContainer section span p {
+  font-size: 14px;
+  line-height: 1.05rem;
+  color: rgba(102, 102, 102, 0.6);
+  font-weight: bold;
+}
+
+.leaderUsersContainer section:first-child p{
+  width: 4rem;
+  text-align: center;
+}
+
+.leaderUsersContainer section:first-child div{
+  margin-left: 2.1rem;
+}
+
+.leaderUsersContainer section:last-child span:first-child {
+  margin-right: 5.25rem; 
+}
+
+.leaderUsersContainer section:last-child span:last-child {
+  margin-right: 4.75rem; 
+}
+
+.leaderUsersContainer section:last-child span p:first-child{
+  color: #5965E0;
+  margin-right: 0.25rem;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.profileContainer div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.profileContainer div span {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+}
+
+.profileContainer div strong {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.profileContainer span strong {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.profileContainer span img {
+  margin-right: 0.5rem;
+}
