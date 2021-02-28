@@ -12,16 +12,20 @@ Focada principalmente para as pessoas que acabam ficando muito tempo utilizando 
 
 ### No terminal digite para instalar as dependências:
 > yarn
+
 ou
+
 > npm install
 
 ### Após finalizar a instalação das dependências digite:
 > yarn dev
+
 ou
+
 > npm run dev
 
 ## Técnologias utilizadas
 
-ReactJS
-Next.js
-Typescript
+- ReactJS
+- Next.js
+- Typescript
